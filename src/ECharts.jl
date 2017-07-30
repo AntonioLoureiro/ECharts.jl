@@ -7,12 +7,12 @@ module ECharts
 	import Base.print, Base.show
 
 
-	#Primitives - in order of descending dependency within files
-	include("definetypes.jl")
+	
+	include("constructors.jl")
 	include("render.jl")
 
 	
 
 
 
-end # module
+end
