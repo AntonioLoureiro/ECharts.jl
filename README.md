@@ -30,33 +30,21 @@ df[:x]=rand(points)*100
 df[:y]=rand(points)*10
 df[:series]=rand(["SerieA","SerieB"],points)
 df[:symbolSize]=rand(10:1:25,points)
-df[:names]=[randstring(10) for i in 1:points]
 head(df)
 ```
 
 
 
 
-<table class="data-frame"><thead><tr><th></th><th>x</th><th>y</th><th>series</th><th>symbolSize</th><th>names</th></tr></thead><tbody><tr><th>1</th><td>88.79703663937323</td><td>0.2511852226084632</td><td>SerieB</td><td>25</td><td>qwO1nazpGD</td></tr><tr><th>2</th><td>45.74945171443117</td><td>8.094166846268045</td><td>SerieA</td><td>11</td><td>RMelWQZoIa</td></tr><tr><th>3</th><td>86.02739210387244</td><td>1.8983069291134091</td><td>SerieB</td><td>19</td><td>mH5aG3jUwF</td></tr><tr><th>4</th><td>66.88375391525645</td><td>1.9462591117850159</td><td>SerieB</td><td>24</td><td>M3MFS6Za4S</td></tr><tr><th>5</th><td>48.566665672083346</td><td>3.9641667527445668</td><td>SerieA</td><td>13</td><td>NVGaUf3rym</td></tr><tr><th>6</th><td>21.248692624370037</td><td>1.9054423953161348</td><td>SerieB</td><td>12</td><td>mMdnwSWFHO</td></tr></tbody></table>
-
+<table class="data-frame"><thead><tr><th></th><th>x</th><th>y</th><th>series</th><th>symbolSize</th></tr></thead><tbody><tr><th>1</th><td>31.84270924596433</td><td>1.1291218016205407</td><td>SerieB</td><td>25</td></tr><tr><th>2</th><td>9.51935323310824</td><td>0.7565851121855416</td><td>SerieB</td><td>19</td></tr><tr><th>3</th><td>74.79062647870633</td><td>6.802525807551829</td><td>SerieA</td><td>20</td></tr><tr><th>4</th><td>28.670134613169918</td><td>1.063095167149788</td><td>SerieB</td><td>22</td></tr><tr><th>5</th><td>75.85640060366802</td><td>0.7252974837492654</td><td>SerieB</td><td>17</td></tr><tr><th>6</th><td>88.8391920100435</td><td>1.1211873678638784</td><td>SerieA</td><td>17</td></tr></tbody></table>
 
 
 
 ```julia
 ## simple Chart using series helper sintax
-EChart(ctype="scatter",x=df[:x],y=df[:y],names=df[:names],series=df[:series],symbolSize=df[:symbolSize])
+EChart(ctype="scatter",x=df[:x],y=df[:y],series=df[:series],symbolSize=df[:symbolSize])
 
 ```
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -66,16 +54,6 @@ EChart(ctype="scatter",x=df[:x],y=df[:y],names=df[:names],series=df[:series],sym
 EChart(ctype="pie",x=[1000,2000,3300],names=["A","B","C"])
 
 ```
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -92,6 +70,4 @@ ECharts.EChart(Dict(
             ]
         ))
 ```
-
-
 
