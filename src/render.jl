@@ -1,8 +1,5 @@
 
-
 #Jupyter Notebook display
-#Refactor this so it's not so repetitive
-#require.config is due to Jupyter Notebook not wanting to load js
 function show(io::IO, ::MIME"text/html", ec::EChart)
 
     divid = "Echart" * randstring(10)
