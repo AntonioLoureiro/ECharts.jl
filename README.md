@@ -45,7 +45,7 @@ head(df)
 EChart(ctype="scatter",x=df[:x],y=df[:y],series=df[:series],symbolSize=df[:symbolSize])
 
 ```
-
+[Chart]: https://github.com/AntonioLoureiro/ECharts.jl/blob/master/docs/scatter_ex.png
 
 
 
