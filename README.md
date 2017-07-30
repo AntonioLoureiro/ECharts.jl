@@ -53,7 +53,7 @@ EChart(ctype="scatter",x=df[:x],y=df[:y],series=df[:series],symbolSize=df[:symbo
 EChart(ctype="pie",x=[1000,2000,3300],names=["A","B","C"])
 
 ```
-
+![Chart2](https://github.com/AntonioLoureiro/ECharts.jl/blob/master/docs/pie_ex.png)
 
 
 ```julia
@@ -69,4 +69,4 @@ ECharts.EChart(Dict(
             ]
         ))
 ```
-
+![Chart3](https://github.com/AntonioLoureiro/ECharts.jl/blob/master/docs/2axys_ex.png)
