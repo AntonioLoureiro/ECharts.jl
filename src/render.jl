@@ -53,9 +53,9 @@ function html(ec::EChart)
 
         return """
 
-              <body>
+           
                 <div id=\"$divid\" style=\"height:$(height)px;width:$(width)px;\"></div>
-              </body>
+              
                 <script type=\"text/javascript\">
 
                         // Initialize after dom ready
