@@ -56,6 +56,7 @@ function html(ec::EChart)
               <body>
                 <div id=\"$divid\" style=\"height:$(height)px;width:$(width)px;\"></div>
               </body>
+                <script type=\"text/javascript\">
 
                         // Initialize after dom ready
                         var myChart = echarts.init(document.getElementById(\"$divid\"));
