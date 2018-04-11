@@ -77,12 +77,13 @@ function html(ec::EChart;public=false)
     width = ec.width
     height = ec.height
 
+    public==true ? src="""<div id=\"$divid\" style=\"height:$(height)px;width:$(width)px;\"></div>""" : src=""
 
         return """
+                
+                $src
     
-                <div id=\"$divid\" style=\"height:$(height)px;width:$(width)px;\"></div>
-              
-                <script src=\"https://cdnjs.cloudflare.com/ajax/libs/echarts/3.8.5/echarts-en.min.js\">
+                <div id=\"$divid\" style=\"height:$(height)px;width:$(width)px;\"></div>           
     
                 <script type=\"text/javascript\">
 
