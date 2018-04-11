@@ -48,7 +48,7 @@ function html(ec::EChart;public=false)
     width = ec.width
     height = ec.height
 
-    public==true ? src="""<script src=\"https://cdnjs.cloudflare.com/ajax/libs/echarts/3.8.5/echarts-en.min.js\">""" : src=""
+    public==true ? src="""<script src=\"https://cdnjs.cloudflare.com/ajax/libs/echarts/3.8.5/echarts-en.min.js\"></script>""" : src=""
 
         return """
                 
