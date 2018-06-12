@@ -18,7 +18,7 @@ function show(io::IO, ::MIME"text/html", ec::EChart)
 
                     require.config({
                       paths: {
-                      echarts: \"https://cdnjs.cloudflare.com/ajax/libs/echarts/3.8.5/echarts-en.min.js\"
+                      echarts: \""https://cdnjs.cloudflare.com/ajax/libs/echarts/3.8.5/echarts.min\"
                       }
                     });
 
