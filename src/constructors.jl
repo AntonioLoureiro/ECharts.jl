@@ -118,7 +118,7 @@ function class_series(arr)
 ret=Dict()
 for i in 1:length(arr)
 
-    haskey(ret,arr[i])? push!(ret[arr[i]],i) : ret[arr[i]]=[i]
+    haskey(ret,arr[i]) ? push!(ret[arr[i]],i) : ret[arr[i]]=[i]
 
 end
 return ret
