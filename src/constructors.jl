@@ -43,9 +43,9 @@ function EChart(;x=[], y=[],symbolSize=[],series=[],names=[],ctype="bar", width=
     if x!=[] && y!=[]
     xAxis=axys(x)
     yAxis=axys(y)
-    xAxis==""? "" : options["xAxis"]=xAxis
+    xAxis=="" ? "" : options["xAxis"]=xAxis
     options["xAxis"]=convert(Dict{Any,Any},options["xAxis"])
-    yAxis==""? "" : options["yAxis"]=yAxis
+    yAxis=="" ? "" : options["yAxis"]=yAxis
     options["yAxis"]=convert(Dict{Any,Any},options["yAxis"])
     end
 
